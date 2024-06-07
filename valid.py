@@ -1,7 +1,11 @@
 import re
 
 def main():
-    ...
+    ip = input('IPv4 Address: ').strip()
+    if validate(ip):
+        print('Valid')
+    else:
+        print('Invalid')
 
 def validate(ip):
     #Regex to match a valid IPv4 address
