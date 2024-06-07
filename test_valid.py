@@ -17,3 +17,7 @@ def test_range():
 def test_alpha():
     assert validate('cat.54.dog.255') == False
     assert validate('lion') == False
+
+
+def test_firstbyte():
+    assert validate('101.512.511.322') == False
